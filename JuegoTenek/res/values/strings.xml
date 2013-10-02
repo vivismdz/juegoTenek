@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">JuegoTenek</string>
+    <string name="app_name">Juego Tének</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Juego Tenek</string>
-
+    <string name="jugar">Jugar</string>
+    <string name="reanudar">Reanudar</string>
+    <string name="creditos">Creditos</string>
+    <string name="descripcion">descripcion</string>
+	<string name="titulo">Juego Tének</string>
+	<string name="instruccionesgenerales">Selecciona el nivel que deseas jugar</string>
+	<string name="vivis">Viviana Méndez García </string>
+	<string name="peter">Pedro Jiménez Ramírez</string>
+	<string name="micke">Miguel Ángel Meléndez Ramírez </string>
+	<string name="nando">Fernando Manuel Torres Martínez</string>
+	<string name="kevin">Kevin Omar Domínguez Vargas </string>
+	<string name="copyright">Juego Tének Copyright Oficial © UPSLP todos los derechos reservados 2013.</string>
+	<string name="nivel1">Nivel 1 </string>
+	<string name="nivel2">Nivel 2</string>
+	<string name="nivel3">Nivel 3</string>
 </resources>

@@ -2,16 +2,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity"
-    android:background="@drawable/fondo" >
+    tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="261dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/amarillo"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="19dp"
+        android:textSize="20sp"
+        android:textColor="@color/morado"
+        android:background="@drawable/boton_amarillo"
+        android:text="@string/jugar" 
+        android:onClick="lanzarJugar"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button2"
+        android:background="@drawable/boton_amarillo"
+        android:text="@string/creditos"
+        android:textColor="@color/morado"
+        android:textSize="20sp"
+        android:onClick="lanzarCreditos"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/boton_verde"
+        android:text="@string/reanudar"
+        android:textColor="@color/morado"
+        android:textSize="20sp" />
 
 </RelativeLayout>

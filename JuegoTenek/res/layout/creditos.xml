@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogeneral" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:text="@string/nando"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rosa"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/micke"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rosa"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/peter"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rosa"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/kevin"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rosa"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="@string/vivis"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rosa"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="@string/copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

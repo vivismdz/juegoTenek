@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="8"
+    android:columnWidth="300dp"
+    android:orientation="vertical"
+    android:rowCount="3"
+    android:stretchMode="columnWidth" >
+
+    <LinearLayout
+        android:id="@+id/lardilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:layout_row="0" >
+
+    <Button
+        android:id="@+id/ardilla"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boton_amarillo"
+        android:text="@string/ardilla"
+        android:textColor="@color/morado"
+        android:textSize="20sp" />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lcaballo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/caballo"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_amarillo"
+            android:text="@string/caballo"
+            android:textColor="@color/morado"
+            android:textSize="20sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lgato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:orientation="vertical"
+         >
+
+    <Button
+        android:id="@+id/gato"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boton_amarillo"
+        android:text="@string/gato"
+        android:textColor="@color/morado"
+        android:textSize="20sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lcoyote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/coyote"
+            android:layout_width="114dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_amarillo"
+            android:text="@string/coyote"
+            android:textColor="@color/morado"
+            android:textSize="20sp" />
+   
+    </LinearLayout>
+    
+      <LinearLayout
+        android:id="@+id/lmono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/mono"
+          android:layout_width="103dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/mono"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>
+
+       <LinearLayout
+        android:id="@+id/lperro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/perro"
+          android:layout_width="105dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/perro"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>
+    
+           <LinearLayout
+        android:id="@+id/lvaca"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:orientation="vertical" >
+
+               <Button
+                   android:id="@+id/vaca"
+                   android:layout_width="92dp"
+                   android:layout_height="55dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/boton_amarillo"
+                   android:text="@string/vaca"
+                   android:textColor="@color/morado"
+                   android:textSize="20sp" />
+   
+    </LinearLayout>
+       
+            <LinearLayout
+        android:id="@+id/lzorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/zorro"
+          android:layout_width="107dp"
+          android:layout_height="53dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/zorro"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>   
+        
+    <LinearLayout
+        android:id="@+id/larana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/arana"
+          android:layout_width="84dp"
+          android:layout_height="52dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/arana"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>    
+    
+     <LinearLayout
+        android:id="@+id/lhormiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/hormiga"
+          android:layout_width="111dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/hormiga"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>    
+    
+         <LinearLayout
+        android:id="@+id/lser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/ser"
+          android:layout_width="105dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/serpiente"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/lconejo"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/conejo"
+          android:layout_width="115dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/boton_amarillo"
+          android:text="@string/conejo"
+          android:textColor="@color/morado"
+          android:textSize="20sp" />
+   
+    </LinearLayout>
+    
+       <LinearLayout
+           android:id="@+id/dardilla"
+           android:layout_width="111dp"
+           android:layout_height="112dp"
+           android:layout_column="4"
+           android:layout_gravity="left|top"
+           android:layout_row="0"
+           android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/bardilla"
+          android:layout_width="115dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/ardilla"
+          android:textSize="20sp" />
+   
+    </LinearLayout>   
+    
+      <LinearLayout
+          android:id="@+id/dcaballo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_column="5"
+          android:layout_gravity="left|top"
+          android:layout_row="0"
+          android:orientation="vertical" >
+
+          <Button
+              android:id="@+id/bcaballo"
+              android:layout_width="93dp"
+              android:layout_height="120dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/caballo" />
+
+      </LinearLayout>
+    
+       <LinearLayout
+        android:id="@+id/dgato"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="6"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:orientation="vertical" >
+
+      <Button
+          android:id="@+id/bgato"
+          android:layout_width="87dp"
+          android:layout_height="109dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/gato"
+           />
+   
+    </LinearLayout> 
+    
+       <LinearLayout
+        android:id="@+id/dcoyote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="7"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:orientation="vertical" >
+
+           <Button
+               android:id="@+id/bcoyote"
+               android:layout_width="101dp"
+               android:layout_height="105dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/coyote" />
+   
+    </LinearLayout>
+</GridLayout>

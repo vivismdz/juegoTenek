@@ -19,6 +19,18 @@
 	<string name="nivel1">Nivel 1 </string>
 	<string name="nivel2">Nivel 2</string>
 	<string name="nivel3">Nivel 3</string>
+	<string name="numeros">números</string>
+	<string name="animales">animales</string>
+	<string name="intrucciones_niveles_ninos">Selecciona la categoria para jugar</string>
+	<string name="jugador1">Nombre  1</string>
+	<string name="jugador2">Nombre  2</string>
+	<string name="jugador3">Nombre  3</string>
+	<string name="jugador4">Nombre  4</string>
+	<string name="jugador5">Nombre  5</string>
+	<string name="jugador6">Nombre  6</string>
+	<string name="jugador7">Nombre  7</string>
+	<string name="jugador8">Nombre  8</string>
+	
 	
 <string name="ardilla">Ardilla</string>
 <string name="caballo">Caballo</string>

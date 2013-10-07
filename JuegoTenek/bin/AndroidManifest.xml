@@ -26,6 +26,9 @@
         <activity android:name="org.example.juegotenek.Creditos" android:screenOrientation="landscape"></activity>
         <activity android:name="org.example.juegotenek.Jugar" android:screenOrientation="landscape"></activity>
         <activity android:name="org.example.juegotenek.Ninos" android:screenOrientation="landscape"></activity>
+        <activity android:name="org.example.juegotenek.Ninos_nivel" android:screenOrientation="landscape"></activity>
+        <activity android:name="org.example.juegotenek.Reanudar" android:screenOrientation="landscape"></activity>
+         <activity android:name="org.example.juegotenek.Ninos_numeros" android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

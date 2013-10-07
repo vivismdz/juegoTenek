@@ -60,6 +60,7 @@
         android:background="@drawable/boton_verde"
         android:text="@string/reanudar"
         android:textColor="@color/morado"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="lanzarReanudar" />
 
 </RelativeLayout>

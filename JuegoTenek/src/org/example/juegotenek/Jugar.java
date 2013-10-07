@@ -15,13 +15,21 @@ public class Jugar extends Activity {
 	}
 	
 	/*se lanza la aztividad de jugar nivel Niños*/
-	 public void lanzarNinos(View view){
+	 public void lanzarNinos_nivel(View view){
 
-	      Intent i = new Intent(this, Ninos.class);
+	      Intent i = new Intent(this, Ninos_nivel.class);
+	      startActivity(i);
+	      finish();
+ }
+	 
+	 /*Se lanza pantalla previa*/
+	 public void lanzarAtras(View view){
+
+	      Intent i = new Intent(this, MainActivity.class);
 
 	      startActivity(i);
-         finish();
- }
+	      finish();
+	 }
 	
 
 }

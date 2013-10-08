@@ -68,7 +68,7 @@ public class Ninos_numeros  extends Activity {
 	    *  sera de igual forma para los otros niveles.
 	    */
 	    campo_puntos = (TextView) findViewById(R.id.TextView2);
-	    campo_puntos.setText(Integer.toString(MainActivity.PUNTOS));
+	    campo_puntos.setText("0");
 	    
 	}
 	

@@ -29,7 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_amarillo"
-                    android:text="cero" />
+                    android:text="@string/cero" />
             </LinearLayout>
 
             <LinearLayout
@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_verde"
-                    android:text="uno" />
+                    android:text="@string/uno" />
             </LinearLayout>
 
             <LinearLayout
@@ -56,7 +56,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_amarillo"
-                    android:text="dos" />
+                    android:text="@string/dos" />
             </LinearLayout>
         </LinearLayout>
 
@@ -74,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_verde"
-                    android:text="tres" />
+                    android:text="@string/tres" />
             </LinearLayout>
 
             <LinearLayout
@@ -87,7 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_amarillo"
-                    android:text="cuatro" />
+                    android:text="@string/cuatro" />
             </LinearLayout>
 
             <LinearLayout
@@ -100,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_verde"
-                    android:text="cinco" />
+                    android:text="@string/cinco" />
             </LinearLayout>
         </LinearLayout>
 
@@ -118,7 +118,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_amarillo"
-                    android:text="seis" />
+                    android:text="@string/seis" />
             </LinearLayout>
 
             <LinearLayout
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_verde"
-                    android:text="siete" />
+                    android:text="@string/siete" />
             </LinearLayout>
 
             <LinearLayout
@@ -144,7 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_amarillo"
-                    android:text="ocho" />
+                    android:text="@string/ocho" />
             </LinearLayout>
         </LinearLayout>
 
@@ -162,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_verde"
-                    android:text="nueve" />
+                    android:text="@string/nueve" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

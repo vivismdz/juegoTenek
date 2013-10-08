@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class Ninos_numeros extends Activity {
+public class Ninos_numeros  extends Activity {
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class Ninos_numeros extends Activity {
 		findViewById(R.id.btn_txt_cuatro).setOnTouchListener(new MyTouchListener());
 		findViewById(R.id.btn_txt_cinco).setOnTouchListener(new MyTouchListener());
 		findViewById(R.id.btn_txt_seis).setOnTouchListener(new MyTouchListener());
-		findViewById(R.id.btn_txt_siete).setOnTouchListener(new MyTouchListener());
+		findViewById(R.id.btn_txt_seite).setOnTouchListener(new MyTouchListener());
 		findViewById(R.id.btn_txt_ocho).setOnTouchListener(new MyTouchListener());
 		findViewById(R.id.btn_txt_nueve).setOnTouchListener(new MyTouchListener());
 
@@ -46,9 +46,9 @@ public class Ninos_numeros extends Activity {
 		        
 	    
 	    findViewById(R.id.layout_img_cero).setOnDragListener(new MyDragListener());//
-	    findViewById(R.id.layout_img_uno).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.layout_img_dos).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.layout_img_tres).setOnDragListener(new MyDragListener());
+	    findViewById(R.id.layout_img_uno).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.layout_img_cuatro).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.layout_img_cinco).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.layout_img_seis).setOnDragListener(new MyDragListener());
@@ -149,111 +149,6 @@ public class Ninos_numeros extends Activity {
 		        		 }
 		 		        
 		         	break;
-		        	case R.id.layout_img_tres:
-		        		 if(R.id.btn_txt_tres==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"tres" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_tres);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
-		        	case R.id.layout_img_cuatro:
-		        		 if(R.id.btn_txt_cuatro==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"cuatro" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_cuatro);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
-		        	case R.id.layout_img_cinco:
-		        		 if(R.id.btn_txt_cinco==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"cinco" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_cinco);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
-		        	case R.id.layout_img_seis:
-		        		 if(R.id.btn_txt_seis==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"seis" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_seis);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
-		        	case R.id.layout_img_siete:
-		        		 if(R.id.btn_txt_siete==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"siete" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_siete);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
-		        	case R.id.layout_img_ocho:
-		        		 if(R.id.btn_txt_ocho==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"ocho" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_ocho);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
-		        	case R.id.layout_img_nueve:
-		        		 if(R.id.btn_txt_nueve==view.getId())
-		 		        {
-		 		        Toast.makeText(Ninos_numeros.this,"nueve" , Toast.LENGTH_SHORT).show();
-		 		        container.addView(view);
-		 		        akan=findViewById(R.id.img_nueve);
-		 		        akan.setVisibility(View.INVISIBLE);
-		 		        }
-		        		 else {
-		        			 owner.addView(view);
-			 		        view.setVisibility(View.VISIBLE);
-		        		 }
-		 		        
-		         	break;
-		         	
 		         	default:
 		         		owner.addView(view);
 	 		        	view.setVisibility(View.VISIBLE);

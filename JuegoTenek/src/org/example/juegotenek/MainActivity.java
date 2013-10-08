@@ -2,13 +2,18 @@ package org.example.juegotenek;
 
 
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
+	
+	// Variables para el manejo de puntos.
+	public static int PUNTOS = 0;
+	private static TextView NUEVOS_PUNTOS;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,5 +52,35 @@ public class MainActivity extends Activity {
 	      startActivity(act);
           finish();
  }
+	 
+	 // Funcion para sumar puntos segun sea el nivel de juego.
+	 /* Esta funcion se llama cuando coincide el elmento arrastrado con
+	  * la vista deseada.
+	  * Su llamada seria MainActivity.puntaje(vistaPuntos, nivel)
+	  * vistaPuntos - Vista en donde se muestran los puntos actuales.
+	  * 			  Habra una en cada nivel para mostrar los puntos.
+	  * nivel - Numero de nivel, segun el nivel son los puntos a sumar.
+	  *  Nivel 1 : 100 puntos
+	  *  Nivel 2 : 150 puntos
+	  *  Nivel 3 : 200 puntos
+	  *  
+	  */
+	 public static void puntaje(View view, int nivel){
+		 switch(nivel){
+		 case 1:
+			 PUNTOS += 100;
+			 break;
+		 case 2:
+			 PUNTOS += 150;
+			 break;
+		 case 3:
+			 PUNTOS += 200;
+			 break;
+		 }
+		 // Actualizar los puntos en la vista del puntaje.
+		 NUEVOS_PUNTOS = (TextView) view;
+		 NUEVOS_PUNTOS.setText(Integer.toString(PUNTOS));
+		 
+	 }
 
 }

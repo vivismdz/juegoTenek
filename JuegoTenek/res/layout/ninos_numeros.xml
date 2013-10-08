@@ -313,16 +313,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/linearLayout1"
-        android:textColor="@color/blanco"
-        android:text="Puntuacion"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -331,5 +321,26 @@
         android:layout_alignParentLeft="true"
         android:background="@drawable/botonatras"
         android:onClick="lanzarAtras"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/TextView2"
+        android:text="@string/puntuacion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
+    
+	<!-- Vista para mostrar los puntos -->
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
 
 </RelativeLayout>

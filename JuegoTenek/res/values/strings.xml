@@ -32,16 +32,18 @@
 	<string name="jugador8">Nombre  8</string>
 	
 	
-<string name="ardilla">Ardilla</string>
-<string name="caballo">Caballo</string>
-<string name="coyote">Coyote</string>
-<string name="gato">Gato</string>
-<string name="mono">Mono</string>
-<string name="perro">Perro</string>
-<string name="vaca">Vaca</string>
-<string name="zorro">Zorro</string>
-<string name="arana">Araña</string>
-<string name="hormiga">Hormiga</string>
-<string name="serpiente">Serpiente</string>
-<string name="conejo">Conejo</string>
+	<string name="ardilla">Ardilla</string>
+	<string name="caballo">Caballo</string>
+	<string name="coyote">Coyote</string>
+	<string name="gato">Gato</string>
+	<string name="mono">Mono</string>
+	<string name="perro">Perro</string>
+	<string name="vaca">Vaca</string>
+	<string name="zorro">Zorro</string>
+	<string name="arana">Araña</string>
+	<string name="hormiga">Hormiga</string>
+	<string name="serpiente">Serpiente</string>
+	<string name="conejo">Conejo</string>
+	
+	<string name="puntuacion">Puntuación:</string>
 </resources>

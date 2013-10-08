@@ -78,7 +78,8 @@ public final class R {
         public static final int TextView02=0x7f090007;
         public static final int TextView03=0x7f090006;
         public static final int TextView04=0x7f090005;
-        public static final int action_settings=0x7f09006b;
+        public static final int TextView2=0x7f090067;
+        public static final int action_settings=0x7f09006c;
         public static final int animal_burro=0x7f09001a;
         public static final int animal_camello=0x7f09001c;
         public static final int animal_chango=0x7f090020;
@@ -177,10 +178,10 @@ public final class R {
         public static final int textView2=0x7f09000a;
         public static final int textView3=0x7f09000b;
         public static final int textView4=0x7f090000;
-        public static final int textView5=0x7f090068;
-        public static final int textView6=0x7f090067;
-        public static final int textView7=0x7f090069;
-        public static final int textView8=0x7f09006a;
+        public static final int textView5=0x7f090069;
+        public static final int textView6=0x7f090068;
+        public static final int textView7=0x7f09006a;
+        public static final int textView8=0x7f09006b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -230,6 +231,7 @@ public final class R {
         public static final int numeros=0x7f060012;
         public static final int perro=0x7f060022;
         public static final int peter=0x7f06000a;
+        public static final int puntuacion=0x7f060029;
         public static final int reanudar=0x7f060004;
         public static final int serpiente=0x7f060027;
         public static final int titulo=0x7f060007;

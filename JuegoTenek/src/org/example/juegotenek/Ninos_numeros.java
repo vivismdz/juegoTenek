@@ -2,9 +2,9 @@ package org.example.juegotenek;
 
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.content.ClipData;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -13,9 +13,12 @@ import android.view.View.OnDragListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Ninos_numeros  extends Activity {
+	
+	private TextView campo_puntos;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,16 +36,16 @@ public class Ninos_numeros  extends Activity {
 		findViewById(R.id.btn_txt_nueve).setOnTouchListener(new MyTouchListener());
 
 		
-		    findViewById(R.id.layout_btn_txt_cero).setOnDragListener(new MyDragListener());//
-		    findViewById(R.id.layout_btn_txt_uno).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_dos).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_tres).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_cuatro).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_cinco).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_seis).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_seite).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_ocho).setOnDragListener(new MyDragListener());
-		    findViewById(R.id.layout_btn_txt_nueve).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_cero).setOnDragListener(new MyDragListener());//
+		findViewById(R.id.layout_btn_txt_uno).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_dos).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_tres).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_cuatro).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_cinco).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_seis).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_seite).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_ocho).setOnDragListener(new MyDragListener());
+		findViewById(R.id.layout_btn_txt_nueve).setOnDragListener(new MyDragListener());
 		        
 	    
 	    findViewById(R.id.layout_img_cero).setOnDragListener(new MyDragListener());//
@@ -59,6 +62,14 @@ public class Ninos_numeros  extends Activity {
 	    
 	   // findViewById(R.id.bottomleft).setOnDragListener(new MyDragListener());
 	    //findViewById(R.id.bottomright).setOnDragListener(new MyDragListener());
+	    
+	    // Establecer puntaje a 0, al momento de lanzar la actividad.
+	    /* campo_puntos es la vista encargada de mostrar los puntos en este nivel,
+	    *  sera de igual forma para los otros niveles.
+	    */
+	    campo_puntos = (TextView) findViewById(R.id.TextView2);
+	    campo_puntos.setText(Integer.toString(MainActivity.PUNTOS));
+	    
 	}
 	
 	 /*Se lanza pantalla previa*/
@@ -110,6 +121,8 @@ public class Ninos_numeros  extends Activity {
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.img_cero);
 		 		        akan.setVisibility(View.INVISIBLE);
+		 		        // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
 		 		         }
 		        		 else {
 		        			 owner.addView(view);
@@ -128,6 +141,8 @@ public class Ninos_numeros  extends Activity {
 		 		        			
 		 		        akan=findViewById(R.id.img_uno);
 		 		        akan.setVisibility(View.INVISIBLE);
+		 		        // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
 		 		        }
 		        		 else {
 		        			 owner.addView(view);
@@ -142,6 +157,8 @@ public class Ninos_numeros  extends Activity {
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.img_dos);
 		 		        akan.setVisibility(View.INVISIBLE);
+		 		        // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
 		 		        }
 		        		 else {
 		        			 owner.addView(view);

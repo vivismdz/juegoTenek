@@ -4,174 +4,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_niveles" >
 
-    <LinearLayout
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-         >
+        android:minHeight="350sp"
+        android:minWidth="300sp" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_vaca"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" 
-                >
-
-                <Button
-                    android:id="@+id/animal_vaca"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_amarillo"
-                    android:text="vaca" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_tortuga"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_tortuga"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="tortuga" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_raton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_raton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_amarillo"
-                    android:text="raton" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_perro"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_perro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="perro" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_jirafa"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_jirafa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_amarillo"
-                    android:text="jirafa" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_hipopotamo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_hipopotamo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="hipopotamo" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_burro"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_burro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_amarillo"
-                    android:text="burro" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_camello"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_camello"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="camello" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_gato"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_gato"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_amarillo"
-                    android:text="gato" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <RelativeLayout
-                android:id="@+id/animal_linear_chango"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/animal_chango"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="chango"  />
-
-            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/animal_linear_cocodrilo"
@@ -184,7 +26,6 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_amarillo"
                     android:text="cocodrilo" />
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -198,145 +39,171 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_verde"
                     android:text="conejo" />
+            </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/animal_linear_chango"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_chango"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_verde"
+                    android:text="chango" />
             </RelativeLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="1dp"
+            android:layout_y="83dp" >
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/botonatras"
-        android:onClick="lanzarAtras"
-        />
+            <RelativeLayout
+                android:id="@+id/animal_linear_vaca"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
 
-    <LinearLayout
+                <Button
+                    android:id="@+id/animal_vaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_amarillo"
+                    android:text="vaca" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_tortuga"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_tortuga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_verde"
+                    android:text="tortuga" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_raton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_raton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_amarillo"
+                    android:text="raton" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="-3dp"
+            android:layout_y="171dp" >
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_burro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_burro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_amarillo"
+                    android:text="burro" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_camello"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_camello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_verde"
+                    android:text="camello" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_gato"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_gato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_amarillo"
+                    android:text="gato" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="2dp"
+            android:layout_y="265dp" >
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_perro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_perro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_verde"
+                    android:text="perro" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_jirafa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_jirafa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_amarillo"
+                    android:text="jirafa" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/animal_linear_hipopotamo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/animal_hipopotamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_verde"
+                    android:text="hipopotamo" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <RelativeLayout
-                android:id="@+id/linear_img_burro"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_burro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_burro" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/linear_img_camello"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_camello"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_camello" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/linear_img_chango" >
-
-                <Button
-                    android:id="@+id/btn_img_chango"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_chango"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/linear_img_cocodrilo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_cocodrilo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_cocodrilo" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <RelativeLayout
-                android:id="@+id/linear_img_conejo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_conejo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_conejo" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/linear_img_gato"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_gato"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_gato" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/linear_img_hipopotamo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_hipopotamo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_hipopotamo" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/linear_img_perro"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/btn_img_perro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/animal_perro" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
+        android:layout_alignParentTop="true" 
+        android:minHeight="420sp"
+        android:minWidth="300sp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -352,7 +219,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/animal_raton" />
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -365,7 +231,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/animal_tortuga" />
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -377,8 +242,7 @@
                     android:id="@+id/btn_img_vaca"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/animal_vaca"/>
-
+                    android:background="@drawable/animal_vaca" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -390,12 +254,150 @@
                     android:id="@+id/btn_img_jirafa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/animal_jirafa"/>
-
+                    android:background="@drawable/animal_jirafa" />
             </RelativeLayout>
-
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="1dp"
+            android:layout_y="140dp" >
+
+            <RelativeLayout
+                android:id="@+id/linear_img_burro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_burro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_burro" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_img_camello"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_camello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_camello" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_img_chango"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_chango"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_chango" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_img_cocodrilo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_cocodrilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_cocodrilo" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="-3dp"
+            android:layout_y="274dp" >
+
+            <RelativeLayout
+                android:id="@+id/linear_img_conejo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_conejo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_conejo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_img_gato"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_gato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_gato" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_img_hipopotamo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_hipopotamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_hipopotamo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_img_perro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_img_perro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/animal_perro" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </AbsoluteLayout>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/botonatras"
+        android:onClick="lanzarAtras" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button10"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_toRightOf="@+id/button10"
+        android:textColor="@color/blanco"
+        android:text="Puntución:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:textColor="@color/blanco"
+        android:textSize="20sp" />
 
 </RelativeLayout>

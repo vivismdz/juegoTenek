@@ -63,4 +63,14 @@
         android:textSize="20sp"
         android:onClick="lanzarReanudar" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Cerrar"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_rosa" />
+
 </RelativeLayout>

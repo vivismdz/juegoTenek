@@ -12,14 +12,20 @@ import android.view.View.DragShadowBuilder;
 import android.view.View.OnDragListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Ninos  extends Activity {
 	
+		/*variable para puntuación*/
+		private TextView campo_puntos;
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ninos);
+		
 		/*boton con texto del animal*/
 		findViewById(R.id.animal_burro).setOnTouchListener(new MyTouchListener());
 		findViewById(R.id.animal_camello).setOnTouchListener(new MyTouchListener());
@@ -61,8 +67,11 @@ public class Ninos  extends Activity {
 	    findViewById(R.id.animal_linear_perro).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.animal_linear_raton).setOnDragListener(new MyDragListener());
 	    findViewById(R.id.animal_linear_tortuga).setOnDragListener(new MyDragListener());
-	   // findViewById(R.id.bottomleft).setOnDragListener(new MyDragListener());
-	    //findViewById(R.id.bottomright).setOnDragListener(new MyDragListener());
+	   
+	    /*se resetea la puntuacion*/
+	    MainActivity.PUNTOS = 0;
+	    campo_puntos = (TextView) findViewById(R.id.textView2);
+	    campo_puntos.setText("0");
 	}
 	
 	/*Funciones pantallas botones */
@@ -92,6 +101,7 @@ public class Ninos  extends Activity {
 		  }
 	 
 	 
+	 /*Funcion drag and drop*/
 	 class MyDragListener implements OnDragListener {
 		   
 		    
@@ -99,196 +109,235 @@ public class Ninos  extends Activity {
 		    public boolean onDrag(View v, DragEvent event) {
 		     View akan;
 				
-		      switch (event.getAction()) {
-		      case DragEvent.ACTION_DRAG_STARTED:
-		        // Do nothing
-		        break;
-		      case DragEvent.ACTION_DRAG_ENTERED:
-		       
-		        break;
-		      case DragEvent.ACTION_DRAG_EXITED:
-		        
-		        break;
-		      case DragEvent.ACTION_DROP:
+		      
+		      if( event.getAction()==DragEvent.ACTION_DROP)
+		       {
 		        // Dropped, reassign View to ViewGroup
 		        View view = (View) event.getLocalState();
 		        ViewGroup owner = (ViewGroup) view.getParent();
 		        owner.removeView(view);
-		        LinearLayout container = (LinearLayout) v;
-		        		/*linear de img*/					 /* id de btn con txt*/ 
-		        if(R.id.linear_img_burro==container.getId()&&R.id.animal_burro==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_burro);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        if(R.id.linear_img_camello==container.getId()&&R.id.animal_camello==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_camello);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
+		        RelativeLayout container = (RelativeLayout) v;
 		        
-		        if(R.id.linear_img_chango==container.getId()&&R.id.animal_chango==view.getId())
+		        switch(container.getId())
 		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_chango);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
+		        	case R.id.linear_img_vaca:
+		        		 if(R.id.animal_vaca==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"cero" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_vaca);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		        // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		         }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        	
+		 		        	
+		         	break;
+		         	/*img_num*/
+		        	case R.id.linear_img_burro:
+		        				/*boton con txt*/
+		        		 if(R.id.animal_burro==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"uno" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        			
+		 		        akan=findViewById(R.id.btn_img_burro);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		        // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_camello:
+		        		 if(R.id.animal_camello==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"dos" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_camello);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		        // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_chango:
+		        		 if(R.id.animal_chango==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"tres" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_chango);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_cocodrilo:
+		        		 if(R.id.animal_cocodrilo==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"cuatro" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_cocodrilo);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_conejo:
+		        		 if(R.id.animal_conejo==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"cinco" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_conejo);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_gato:
+		        		 if(R.id.animal_gato==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"seis" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_gato);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_hipopotamo:
+		        		 if(R.id.animal_hipopotamo==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"siete" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_hipopotamo);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_jirafa:
+		        		 if(R.id.animal_jirafa==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"ocho" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_jirafa);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_perro:
+		        		 if(R.id.animal_linear_perro==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"nueve" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_perro);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_raton:
+		        		 if(R.id.animal_linear_raton==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"nueve" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_raton);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		        	case R.id.linear_img_tortuga:
+		        		 if(R.id.animal_linear_tortuga==view.getId())
+		 		        {
+		 		        Toast.makeText(Ninos.this,"nueve" , Toast.LENGTH_SHORT).show();
+		 		        container.addView(view);
+		 		        akan=findViewById(R.id.btn_img_tortuga);
+		 		        akan.setVisibility(View.INVISIBLE);
+		 		    // Incrementar puntos.
+		 		        MainActivity.puntaje(campo_puntos,1);
+		 		        }
+		        		 else {
+		        			 owner.addView(view);
+			 		        view.setVisibility(View.VISIBLE);
+		        		 }
+		 		        
+		         	break;
+		         	
+		         	default:
+		         		owner.addView(view);
+	 		        	view.setVisibility(View.VISIBLE);
+	 		        	Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
+		         	break;
 		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
 		        
-		        if(R.id.linear_img_cocodrilo==container.getId()&&R.id.animal_cocodrilo==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_cocodrilo);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_conejo==container.getId()&&R.id.animal_conejo==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_conejo);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_gato==container.getId()&&R.id.animal_gato==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_gato);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_hipopotamo==container.getId()&&R.id.animal_hipopotamo==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_hipopotamo);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_jirafa==container.getId()&&R.id.animal_jirafa==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_jirafa);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_perro==container.getId()&&R.id.animal_perro==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_perro);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_raton==container.getId()&&R.id.animal_raton==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_raton);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_tortuga==container.getId()&&R.id.animal_tortuga==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_tortuga);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
-		        
-		        if(R.id.linear_img_vaca==container.getId()&&R.id.animal_vaca==view.getId())
-		        {
-		        Toast.makeText(Ninos.this,"Ardilla=Ot’el" , Toast.LENGTH_SHORT).show();
-		        container.addView(view);
-		        akan=findViewById(R.id.btn_img_vaca);/*btn img*/
-		        akan.setVisibility(View.INVISIBLE);
-		        }
-		        else 
-		        	{
-		        	owner.addView(view);
-		        	view.setVisibility(View.VISIBLE);
-		        	  Toast.makeText(Ninos.this,"Intenta otra vez" , Toast.LENGTH_SHORT).show();
-		        	}
 		       
-		        break;
 		        
-		      case DragEvent.ACTION_DRAG_ENDED:
 		       
-		      default:
-		        break;
+		       
 		      }
 		      return true;  
 		    }

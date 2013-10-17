@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_niveles"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.60"
+        android:orientation="vertical" >
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10sp"
+            android:paddingTop="20sp" >
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="-1dp"
+                android:layout_y="172dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="Yo hablo tének " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="-5dp"
+                android:layout_y="78dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="Buenas Tardes " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="221dp"
+                android:layout_y="142dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="hasta la vista " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="221dp"
+                android:layout_y="65dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="Gracias" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="188dp"
+                android:layout_y="247dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="si (esta bién) " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="199dp"
+                android:layout_y="368dp"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_txt_f7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="16dp"
+                android:layout_y="295dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/txt_f7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_verde"
+                    android:text="No entiendo " />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/txt_f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="166dp"
+                android:layout_y="380dp"
+                android:background="@drawable/btn_verde"
+                android:text="Buenos Días" />
+
+        </AbsoluteLayout>
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.37"
+        android:padding="20sp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_img_f8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/img_f8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_tenek_f8" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="347dp"
+            android:layout_y="365dp"
+            android:background="@drawable/botonatras"
+            android:onClick="lanzarAtras"  />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="410dp"
+            android:text="@string/puntuacion" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="115dp"
+            android:layout_y="415dp"
+            android:text="TextView" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>

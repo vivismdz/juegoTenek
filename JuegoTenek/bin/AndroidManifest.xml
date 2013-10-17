@@ -28,7 +28,10 @@
         <activity android:name="org.example.juegotenek.Ninos" android:screenOrientation="landscape"></activity>
         <activity android:name="org.example.juegotenek.Ninos_nivel" android:screenOrientation="landscape"></activity>
         <activity android:name="org.example.juegotenek.Reanudar" android:screenOrientation="landscape"></activity>
-         <activity android:name="org.example.juegotenek.Ninos_numeros" android:screenOrientation="landscape"></activity>
+        <activity android:name="org.example.juegotenek.Ninos_numeros" android:screenOrientation="landscape"></activity>
+        <activity android:name="org.example.juegotenek.Jovenes_numeros" android:screenOrientation="landscape"></activity>
+         <activity android:name="org.example.juegotenek.Adultos_frases" android:screenOrientation="landscape"></activity>
+         <activity android:name="org.example.juegotenek.Video" android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

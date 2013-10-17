@@ -24,13 +24,15 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/jovenes" />
+            android:background="@drawable/jovenes" 
+            android:onClick="lanzarJovenes_numeros"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/adultos" />
+            android:background="@drawable/adultos"
+             android:onClick="lanzarAdultos_frases" />
     </LinearLayout>
 
     <TextView

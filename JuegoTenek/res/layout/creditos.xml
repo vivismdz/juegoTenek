@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondogeneral" >
+   
+    android:background="@drawable/fondogeneral"
+    android:gravity="center" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -13,68 +15,7 @@
         android:layout_marginTop="61dp"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/TextView04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="Arial"
-            android:text="@string/nando"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/rosa"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/TextView03"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="@string/micke"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/rosa"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/TextView02"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:text="@string/peter"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/rosa"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:text="@string/kevin"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/rosa"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:text="@string/vivis"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/rosa"
-            android:textSize="25sp" />
-
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="101dp"
-        android:text="@string/copyright"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <Button
         android:id="@+id/button1"
@@ -84,5 +25,55 @@
         android:layout_alignParentLeft="true"
         android:background="@drawable/botonatras"
         android:onClick="lanzarAtras"  />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="70sp"
+         >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_vivis2"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_micke2"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_peter2" />
+
+        <Button
+            
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_nando2" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_kevin2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_marginBottom="24dp"
+        android:layout_toRightOf="@+id/button1"
+        android:text="@string/copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

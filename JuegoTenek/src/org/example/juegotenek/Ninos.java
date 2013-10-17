@@ -123,7 +123,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_vaca:
 		        		 if(R.id.animal_vaca==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"cero" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"vaca=pakash" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_vaca);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -142,7 +142,7 @@ public class Ninos  extends Activity {
 		        				/*boton con txt*/
 		        		 if(R.id.animal_burro==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"uno" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"burro=wajuts" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        			
 		 		        akan=findViewById(R.id.btn_img_burro);
@@ -160,7 +160,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_camello:
 		        		 if(R.id.animal_camello==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"dos" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"camello=bichim" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_camello);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -177,7 +177,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_chango:
 		        		 if(R.id.animal_chango==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"tres" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"chango=chuch" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_chango);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -194,7 +194,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_cocodrilo:
 		        		 if(R.id.animal_cocodrilo==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"cuatro" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"cocodrilo=ocho’" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_cocodrilo);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -211,7 +211,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_conejo:
 		        		 if(R.id.animal_conejo==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"cinco" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"conejo=e'them" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_conejo);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -228,7 +228,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_gato:
 		        		 if(R.id.animal_gato==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"seis" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"gato=mitsu’o" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_gato);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -245,7 +245,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_hipopotamo:
 		        		 if(R.id.animal_hipopotamo==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"siete" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"hipopotamo= ju chu'kul" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_hipopotamo);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -262,7 +262,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_jirafa:
 		        		 if(R.id.animal_jirafa==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"ocho" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"ts’itsin" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_jirafa);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -279,7 +279,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_perro:
 		        		 if(R.id.animal_linear_perro==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"nueve" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"perro=pik’o’" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_perro);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -296,7 +296,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_raton:
 		        		 if(R.id.animal_linear_raton==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"nueve" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"rata=te'el" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_raton);
 		 		        akan.setVisibility(View.INVISIBLE);
@@ -313,7 +313,7 @@ public class Ninos  extends Activity {
 		        	case R.id.linear_img_tortuga:
 		        		 if(R.id.animal_linear_tortuga==view.getId())
 		 		        {
-		 		        Toast.makeText(Ninos.this,"nueve" , Toast.LENGTH_SHORT).show();
+		 		        Toast.makeText(Ninos.this,"tortuga=pik’uy" , Toast.LENGTH_LONG).show();
 		 		        container.addView(view);
 		 		        akan=findViewById(R.id.btn_img_tortuga);
 		 		        akan.setVisibility(View.INVISIBLE);

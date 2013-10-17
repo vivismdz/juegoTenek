@@ -30,6 +30,23 @@ public class Jugar extends Activity {
 	      startActivity(i);
 	      finish();
 	 }
-	
+	 
+	 /*Funcion lanzar nivel Jovenes*/
+	 public void lanzarJovenes_numeros(View view){
+
+	      Intent i = new Intent(this, Jovenes_numeros.class);
+
+	      startActivity(i);
+	      finish();
+	 }
+	 
+	 /*Funcion lanzar nivel Adultos*/
+	 public void lanzarAdultos_frases(View view){
+
+	      Intent i = new Intent(this, Adultos_frases.class);
+
+	      startActivity(i);
+	      finish();
+	 }
 
 }

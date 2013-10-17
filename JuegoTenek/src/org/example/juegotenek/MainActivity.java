@@ -52,6 +52,20 @@ public class MainActivity extends Activity {
 	      startActivity(act);
           finish();
  }
+	 /*Funcion Ver video*/
+	 public void lanzarVervideo(View view){
+
+	      Intent act = new Intent(this, Video.class);
+	      startActivity(act);
+	      finish();
+	 	}
+	 /*Funcion cerrar aplicacion*/
+	 public void cerrar(View view){
+
+		 System.exit(0);
+	 }
+	 
+	 
 	 
 	 // Funcion para sumar puntos segun sea el nivel de juego.
 	 /* Esta funcion se llama cuando coincide el elmento arrastrado con

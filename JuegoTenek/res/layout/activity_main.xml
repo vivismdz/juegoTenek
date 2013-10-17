@@ -9,19 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="261dp"
-        android:layout_marginTop="27dp"
-        android:text="@string/titulo"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/amarillo"
-        android:textSize="45sp" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -70,7 +57,31 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:text="Cerrar"
+        android:onClick="cerrar"
         android:textColor="@color/blanco"
         android:background="@drawable/boton_rosa" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button1"
+        android:text="@string/titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/amarillo"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/boton_verde"
+        android:text="Ver Video"
+        android:textColor="@color/morado"
+        android:onClick="lanzarVervideo" />
 
 </RelativeLayout>

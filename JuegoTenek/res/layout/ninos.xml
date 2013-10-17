@@ -8,6 +8,8 @@
         android:id="@+id/AbsoluteLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AbsoluteLayout1"
+        android:layout_alignParentTop="true"
         android:minHeight="350sp"
         android:minWidth="300sp" >
 
@@ -84,8 +86,8 @@
                     android:id="@+id/animal_tortuga"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="tortuga" />
+                    android:background="@drawable/btn_trans"
+                     />
             </RelativeLayout>
 
             <RelativeLayout
@@ -97,8 +99,8 @@
                     android:id="@+id/animal_raton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton_amarillo"
-                    android:text="raton" />
+                    android:background="@drawable/btn_trans"
+                     />
             </RelativeLayout>
         </LinearLayout>
 
@@ -163,8 +165,8 @@
                     android:id="@+id/animal_perro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton_verde"
-                    android:text="perro" />
+                    android:background="@drawable/btn_trans"
+                    />
             </RelativeLayout>
 
             <RelativeLayout
@@ -200,10 +202,11 @@
         android:id="@+id/AbsoluteLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" 
+        android:layout_alignParentTop="true"
         android:minHeight="420sp"
-        android:minWidth="300sp">
+        android:minWidth="300sp" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -218,7 +221,7 @@
                     android:id="@+id/btn_img_raton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/animal_raton" />
+                    android:background="@drawable/btn_trans" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -230,7 +233,7 @@
                     android:id="@+id/btn_img_tortuga"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/animal_tortuga" />
+                    android:background="@drawable/btn_trans" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -364,7 +367,7 @@
                     android:id="@+id/btn_img_perro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/animal_perro" />
+                    android:background="@drawable/btn_trans" />
             </RelativeLayout>
         </LinearLayout>
 
